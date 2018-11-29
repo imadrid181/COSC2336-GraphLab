@@ -10,9 +10,9 @@ public class GraphLab {
         int numberOfEdges = input.nextInt();
 
         System.out.println("Do you want the graph to be weighted (Y/N) ? ");
-        Char weighted = input.nextChar();
+        String weighted = input.nextLine();
 
-        if(weighted == 'Y') {
+        if(weighted.equals("Y")) {
             System.out.println("What do you want the min weight to be ? ");
             int minWeight = input.nextInt();
 
@@ -21,7 +21,9 @@ public class GraphLab {
         }
         
         System.out.println("How do you want the graph to be represented (List/Matrix) ?");
-        Sting rep = input.nextLine();
+        String rep = input.nextLine();
 
     }
+
+    
 }
