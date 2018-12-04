@@ -1,6 +1,7 @@
 import java.util.*;
 public class GraphLab {
     public static void main(String[] args) {
+        /*
         Scanner input = new Scanner(System.in);
         
         System.out.println("How many vertices do you want the graph to have ? ");
@@ -10,6 +11,7 @@ public class GraphLab {
         int numberOfEdges = input.nextInt();
 
         System.out.println("Do you want the graph to be weighted (Y/N) ? ");
+        input.nextLine();
         String weighted = input.nextLine();
 
         if(weighted.equals("Y")) {
@@ -21,9 +23,13 @@ public class GraphLab {
         }
         
         System.out.println("How do you want the graph to be represented (List/Matrix) ?");
+        input.nextLine();
         String rep = input.nextLine();
-
+        input.close();
+        */
+        
+        AdjMatrix graph = new AdjMatrix(5, 5, false);
+        graph.printArray();
     }
-
     
 }
